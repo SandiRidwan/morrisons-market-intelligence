@@ -5,7 +5,7 @@
 **Double-click** `morrisons_market_intelligence.twb` (atau `File → Open` di Tableau Public).
 
 Workbook berisi:
-- 1 datasource (extract `.hyper` — 18.291 produk)
+- 1 datasource (extract `.hyper` — 11.208 produk)
 - **10 worksheet siap**: Median Price by Category, Avg Rating, Avg Unit Price,
   Products by Price Tier, Avg Discount, Top Brands, Avg Value + 3 KPI
 - 1 dashboard: **"Morrisons — Market Intelligence"**
@@ -23,7 +23,7 @@ Setelah terbuka, tinggal drag worksheet ke dashboard & hias sesuai selera
 | File | Isi |
 |------|-----|
 | `morrisons_market_intelligence.twb` | ⭐ **Workbook** — buka ini langsung |
-| `products.hyper` | 18.291 produk (extract Tableau, format native) |
+| `products.hyper` | 11.208 produk (extract Tableau, format native — data terbaru 2026) |
 | `morrisons.tds` | Datasource alternatif (kalau mau bikin workbook sendiri) |
 | `products.csv` | Data mentah (untuk Power BI / analisis lain) |
 

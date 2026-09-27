@@ -1,6 +1,6 @@
-# 📊 Morrisons UK — Grocery Market Intelligence Report
+﻿# 📊 Morrisons UK — Grocery Market Intelligence Report
 
-**Analisis kompetitif atas 18.100 produk ritel dari groceries.morrisons.com**
+**Analisis kompetitif atas 11.208 produk ritel (data terbaru 2026) dari groceries.morrisons.com**
 
 > Sebuah studi end-to-end: dari data web yang sulit didapat → insight bisnis yang
 > dapat ditindaklanjuti. Dibuat sebagai portofolio data analyst oleh
@@ -12,13 +12,13 @@
 
 | Metrik | Nilai |
 |--------|-------|
-| Produk dianalisis | **18.100** (dari 18.291 baris mentah) |
-| Kategori | **15** kategori ritel |
-| Brand | **2.600** brand unik |
-| Rentang harga | **£0.15 – £300.00** (median £2.70) |
-| Produk sedang promo | **26.4%** |
-| Median diskon promo | **−23.1%** |
-| Produk dengan rating | **33.1%** |
+| Produk dianalisis | **11.208** (produk unik, data scrape terbaru) |
+| Kategori | **13** kategori ritel |
+| Brand | **1.955** brand unik |
+| Rentang harga | **£0.15 – £110.00** (median £2.80) |
+| Produk sedang promo | **21.9%** |
+| Median diskon promo | **−25.0%** |
+| Produk dengan rating | **99.7%** |
 
 **3 temuan utama:**
 
@@ -124,7 +124,7 @@ tersembunyi di dalam *string*, bukan kolom rapi:
 
 ![Rating by quartile](reports/figures/07_rating_by_quartile.png)
 
-- **Spearman ρ = 0.08** → hampir tidak ada hubungan harga & rating.
+- **Spearman ρ = −0.145** → korelasi NEGATIF lemah: produk mahal cenderung dinilai lebih rendah.
 - Median rating naik hanya tipis dari Q1 (4.35) ke Q4 (4.80).
 - **Implikasi:** pelanggan tidak otomatis menganggap produk mahal lebih baik.
   Ini *berita baik* untuk strategi value & private-label.
@@ -167,7 +167,7 @@ untuk endcap "best value" atau rekomendasi berbasis data:
 |---|-------------|----------|-------------------|
 | **R1** | **Luncurkan/perluas private-label di Treats & Snacks, Baby & Toddler, Drinks** | Gap premium +8–10pp, permintaan terbukti | Tangkap segmen value, margin lebih tinggi |
 | **R2** | **Pertahankan agresivitas promo di Alkohol & Fresh** tapi pantau kedalaman diskon | Promo rate 60% & 55% | Jaga daya saing tanpa erosi margin |
-| **R3** | **Bangun kampanye "Bukti Value"** dengan produk value-score tertinggi | ρ=0.08 (harga≠kualitas) | Menarik pembeli sensitif harga |
+| **R3** | **Bangun kampanye "Bukti Value"** dengan produk value-score tertinggi | ρ=−0.145 (harga tinggi ≠ rating tinggi) | Menarik pembeli sensitif harga |
 | **R4** | **Prioritaskan kelengkapan konten produk** di kategori dengan deskripsi terendah | Content completeness bervariasi | Tingkatkan SEO & konversi |
 | **R5** | **Pantau kompetitor secara berkala** dengan pipeline yang sama | Data trending | Deteksi pergerakan harga pesaing lebih awal |
 

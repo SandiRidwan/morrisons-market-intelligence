@@ -1,16 +1,14 @@
 cat1,products,with_description_pct,avg_desc_len
-Meat & Fish,56,98.2,262.0
-"Beer, Wines & Spirits",1927,99.7,438.0
-Toiletries & Beauty,2882,99.7,721.0
-Dietary & Lifestyle Foods,440,99.8,431.0
-Fresh & Chilled Foods,453,99.8,487.0
-World Foods,1445,99.9,460.0
-Food Cupboard,4207,99.9,529.0
-Baby & Toddler,972,99.9,583.0
-Frozen Food,105,100.0,397.0
-Drinks,887,100.0,525.0
-Bakery & Cakes,74,100.0,335.0
-"Fruit, Veg & Flowers",33,100.0,410.0
-Household,1308,100.0,634.0
-"Health, Wellbeing & Medicines",1192,100.0,596.0
-Treats & Snacks,2119,100.0,439.0
+Baby & Toddler,752,0.0,0.0
+Bakery & Cakes,49,0.0,0.0
+"Beer, Wines & Spirits",1314,0.0,0.0
+Dietary & Lifestyle Foods,332,0.0,0.0
+Drinks,739,0.0,0.0
+Food Cupboard,1487,0.0,0.0
+Frozen Food,72,0.0,0.0
+"Health, Wellbeing & Medicines",1025,0.0,0.0
+Household,1073,0.0,0.0
+Meat & Fish,35,0.0,0.0
+Toiletries & Beauty,1391,0.0,0.0
+Treats & Snacks,1290,0.0,0.0
+World Foods,1206,0.0,0.0

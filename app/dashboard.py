@@ -1,7 +1,7 @@
-"""
+﻿"""
 Morrisons UK — Grocery Market Intelligence Dashboard
 =====================================================
-Dashboard interaktif Streamlit + Plotly atas 18.100 produk hasil scraping.
+Dashboard interaktif Streamlit + Plotly atas 11.208 produk hasil scraping (data terbaru).
 
 Jalankan:
     streamlit run app/dashboard.py
@@ -126,8 +126,8 @@ min_reviews = st.sidebar.slider("Min reviews (rating analysis)", 0, 100, 10, ste
 
 st.sidebar.markdown("---")
 st.sidebar.caption(
-    "Data: scraped from groceries.morrisons.com · n=18,100 products\n\n"
-    "⚠️ Rating tersedia untuk 33% produk saja.")
+    "Data: scraped from groceries.morrisons.com · n=11,208 products\n\n"
+    "⚠️ Rating tersedia untuk 99.7% produk.")
 
 # ---------------------------------------------------------------- filter
 df = df_all.copy()
@@ -249,7 +249,7 @@ with tab_price:
                                  "rating": "Rating"})
         fig.update_traces(marker=dict(size=5))
         style_fig(fig, height=480).update_layout(
-            title="Rating vs Price (Spearman ρ ≈ 0.08)",
+            title=f"Rating vs Price (Spearman ρ = {sub['effective_price'].corr(sub['rating'], method='spearman'):.3f})",
             xaxis_range=[0, price_range[1]])
         st.plotly_chart(fig, use_container_width=True)
 
@@ -400,6 +400,6 @@ st.markdown(
     <div style="color:{C['grey']};font-size:0.8rem;text-align:center;">
       📊 Morrisons UK Market Intelligence · data scraped from groceries.morrisons.com
       · built with Streamlit + Plotly · by <b>Sandi Ridwan</b><br>
-      ⚠️ Rating available for 33% of products · prices are a single snapshot in time
+      ⚠️ Rating available for 99.7% of products · prices are a single snapshot in time
     </div>
     """, unsafe_allow_html=True)

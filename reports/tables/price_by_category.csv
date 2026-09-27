@@ -1,16 +1,14 @@
 cat1,products,median_price,mean_price,p10,p90,price_spread_pct
-"Beer, Wines & Spirits",1927,7.25,10.33,1.88,24.0,305.0
-Toiletries & Beauty,2882,5.0,7.42,1.8,13.6,236.0
-"Health, Wellbeing & Medicines",1192,5.0,7.11,1.5,16.0,290.0
-Household,1308,3.5,4.67,1.25,9.5,236.0
-Frozen Food,105,3.0,3.58,1.67,6.0,144.0
-Baby & Toddler,972,3.0,4.9,1.0,10.97,332.0
-Meat & Fish,56,2.98,3.32,2.5,4.75,76.0
-"Fruit, Veg & Flowers",33,2.7,2.38,1.0,3.7,100.0
-Dietary & Lifestyle Foods,440,2.4,2.8,1.35,3.9,106.0
-Fresh & Chilled Foods,453,2.2,2.39,1.0,4.0,136.0
-Drinks,887,2.1,2.84,1.0,5.67,222.0
-World Foods,1445,2.0,2.69,0.85,5.0,208.0
-Food Cupboard,4207,2.0,2.31,0.95,3.99,152.0
-Bakery & Cakes,74,1.83,2.2,1.25,2.94,92.0
-Treats & Snacks,2119,1.75,2.51,1.0,4.5,200.0
+"Beer, Wines & Spirits",1314,7.0,9.47,2.5,20.0,250.0
+"Health, Wellbeing & Medicines",1025,5.5,6.93,1.75,14.0,223.0
+Toiletries & Beauty,1391,4.0,6.18,1.65,10.9,231.0
+Frozen Food,72,3.6,3.62,2.0,5.0,83.0
+Household,1073,3.5,4.58,1.5,9.0,214.0
+Meat & Fish,35,3.25,3.63,2.63,4.5,58.0
+Baby & Toddler,752,3.0,5.08,1.0,12.72,391.0
+Dietary & Lifestyle Foods,332,2.38,3.09,1.28,4.0,114.0
+Drinks,739,2.2,3.08,1.2,5.75,207.0
+World Foods,1206,2.0,2.68,0.85,5.0,208.0
+Food Cupboard,1487,2.0,2.3,1.0,4.0,150.0
+Bakery & Cakes,49,1.9,2.11,1.25,3.25,105.0
+Treats & Snacks,1290,1.75,2.35,1.0,4.25,186.0

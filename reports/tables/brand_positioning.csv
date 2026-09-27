@@ -1,373 +1,240 @@
 brand,products,price_index,positioning,avg_rating
-Nicorette,16,4.4,Premium,4.25
-Lindt,64,4.0,Premium,4.7
-Toblerone,11,4.0,Premium,5.0
-Jml,15,3.998,Premium,
-Whitley Neill,10,3.931,Premium,
-Finish,19,3.686,Premium,2.3
-Seven Seas,23,3.6,Premium,5.0
-Pampers,78,3.333,Premium,5.0
-Lavazza,17,3.25,Premium,4.5
-Niquitin,11,3.2,Premium,
-Olay,30,3.1,Premium,4.0
-Mam,20,3.084,Premium,
-Ariel,37,2.857,Premium,5.0
-Sma,20,2.816,Premium,4.85
-Shazan,10,2.788,Premium,3.2
-Al Munnawarah,10,2.75,Premium,
-Jack Daniel's,14,2.69,Premium,5.0
-Absolut,11,2.621,Premium,5.0
-Gillette,71,2.6,Premium,5.0
-Ambre Solaire,32,2.6,Premium,3.5
-Optimum,14,2.6,Premium,4.5
-Thorntons,11,2.571,Premium,3.5
-L'Or,21,2.5,Premium,4.9
-Skinny,10,2.5,Premium,5.0
-Tommee Tippee,51,2.497,Premium,5.0
-Aptamil,29,2.417,Premium,4.7
-Shazans,17,2.35,Premium,2.0
-ZULEKHA,19,2.333,Premium,
-Venus,11,2.3,Premium,5.0
-Kendamil,13,2.3,Premium,
-Cetaphil,10,2.3,Premium,5.0
-Bold,27,2.286,Premium,5.0
-Gillette Venus,19,2.25,Premium,3.8
-Nescafe,67,2.25,Premium,4.6
-Gaviscon,30,2.2,Premium,3.8
-Durex,32,2.2,Premium,4.75
-Tassimo,22,2.165,Premium,4.5
-Persil,36,2.143,Premium,4.1
-Kenco,25,2.125,Premium,4.5
-Oral-B,78,2.1,Premium,3.6
-Munchkin,16,2.08,Premium,4.2
-Royal,17,2.0,Premium,3.9
-Daz,10,2.0,Premium,5.0
-Pg Tips,11,2.0,Premium,4.9
-The Original Patty Co.,12,1.938,Premium,
-Gordon's,18,1.931,Premium,
-Nala's,11,1.917,Premium,4.5
-San Pellegrino,16,1.905,Premium,3.6
-Rowse,17,1.875,Premium,4.5
-Surf,24,1.857,Premium,3.0
-Vanish,15,1.857,Premium,4.6
-KP,12,1.857,Premium,5.0
-Weetabix,18,1.854,Premium,4.6
-Childs Farm,24,1.833,Premium,5.0
-Rascals,13,1.833,Premium,5.0
-M&M's,13,1.8,Premium,4.0
-Clairol,52,1.8,Premium,5.0
-Veet,13,1.8,Premium,3.7
-Taylors,24,1.791,Premium,4.6
-Haliborange,14,1.77,Premium,4.15
-Jahan,14,1.763,Premium,
-Costa,27,1.75,Premium,3.0
-Huggies,28,1.75,Premium,4.7
-Twinings,53,1.75,Premium,5.0
-Vileda,14,1.715,Premium,4.1
-Fairy,98,1.714,Premium,4.4
-Yorkshire Tea,11,1.7,Premium,4.55
-Tena,34,1.7,Premium,5.0
-Aveeno,41,1.7,Premium,5.0
-SokoLow,17,1.675,Premium,4.1
-Pura,13,1.667,Premium,5.0
-Nuby,41,1.667,Premium,2.75
-Berocca,10,1.65,Premium,
-Bonne Maman,26,1.65,Premium,4.65
-Bed Head,16,1.65,Premium,5.0
-Scholl,15,1.6,Premium,4.5
-John Frieda,37,1.6,Premium,
-Vitawell,19,1.6,Premium,5.0
-L'Oreal,167,1.6,Premium,4.0
-Ogx,32,1.6,Premium,3.75
-Nice 'N Easy,32,1.6,Premium,5.0
-Baylis & Harding,34,1.6,Premium,4.8
-Guinness,17,1.586,Premium,4.5
-Smirnoff,17,1.586,Premium,
-Huel,11,1.583,Premium,4.9
-Bassetts,16,1.58,Premium,5.0
-Belvita,19,1.571,Premium,4.6
-Graze,14,1.571,Premium,4.85
-Aunty Noray's,12,1.566,Premium,3.0
-Nivea Sun,21,1.54,Premium,4.0
-Kettle,16,1.514,Premium,3.75
-Filippo Berio,25,1.5,Premium,3.35
-The Spice Tailor,21,1.5,Premium,4.9
-Tropical Sun,18,1.495,Premium,4.0
-Najma,19,1.475,Premium,3.9
-Lenor,88,1.429,Premium,5.0
-Doritos,24,1.429,Premium,2.5
-Jordans,23,1.429,Premium,4.9
-Wrigley's Extra,28,1.429,Premium,
-Air Wick,53,1.429,Premium,4.25
-Andrex,22,1.429,Premium,4.2
-Kellogg's,80,1.425,Premium,4.95
-Fever-Tree,26,1.405,Premium,5.0
-Calpol,10,1.384,Premium,4.7
-Eat Natural,12,1.378,Premium,5.0
-Krakus,12,1.375,Premium,5.0
-Wilkinson Sword,27,1.35,Premium,3.15
-Bear,13,1.343,Premium,5.0
-Homepride,16,1.325,Premium,4.7
-Leon,15,1.325,Premium,
-Vitabiotics,18,1.325,Premium,5.0
-Maltesers,19,1.314,Premium,4.8
-Red Bull,38,1.31,Premium,5.0
-Garnier,141,1.3,Premium,4.3
-Lemsip,10,1.3,Premium,5.0
-Live,24,1.3,Premium,
-Freixenet,16,1.293,Premium,
-Cadbury,206,1.286,Premium,4.5
-Nestle,52,1.286,Premium,3.85
-Morrisons The Best,259,1.275,Premium,4.05
-Starbucks,35,1.273,Premium,4.4
-Walker's,65,1.257,Premium,4.2
-The Flava People,11,1.25,Premium,3.0
-Pukka,17,1.25,Premium,
-Mr Kipling,14,1.25,Premium,4.7
-John West,48,1.25,Premium,4.0
-Betty Crocker,24,1.25,Premium,4.55
-Bisto,24,1.25,Premium,4.8
-Bart,42,1.25,Premium,4.5
-Hellmann's,20,1.238,Premium,3.8
-Galaxy,33,1.229,Premium,3.9
-TRESemme,23,1.2,Premium,4.0
-Bulldog,13,1.2,Premium,5.0
-Rimmel,45,1.2,Premium,4.7
-KitKat,24,1.2,Premium,4.0
-Pantene,60,1.2,Premium,4.75
-Malibu,16,1.199,Premium,5.0
-Kallo,16,1.196,Premium,4.55
-Coca-Cola,61,1.19,Premium,5.0
-Barr,16,1.19,Premium,4.75
-Innocent,26,1.19,Premium,5.0
-Deliciously Ella,10,1.184,Premium,5.0
-Heineken,10,1.172,Premium,
-Barefoot,10,1.172,Premium,
-Yellow Tail,10,1.155,Premium,
-Tate & Lyle,20,1.15,Premium,3.15
-Blue Dragon,56,1.15,Premium,4.9
-Mackays,10,1.15,Premium,3.7
-Nomo,21,1.146,Mainstream,5.0
-Rakusen's,16,1.146,Mainstream,5.0
-Jacob's,10,1.143,Mainstream,5.0
-Irn-Bru,17,1.143,Mainstream,5.0
-Twix,11,1.143,Mainstream,5.0
-Aero,16,1.143,Mainstream,4.5
-Milkybar,14,1.143,Mainstream,2.7
-Robinsons,39,1.143,Mainstream,4.05
-Tropicana,15,1.136,Mainstream,4.65
-Ben's Original,21,1.125,Mainstream,4.25
-Capsicana,17,1.125,Mainstream,4.9
-Green Giant,11,1.125,Mainstream,5.0
-Quaker,39,1.125,Mainstream,4.0
-Pizza Express,10,1.125,Mainstream,4.85
-Kinder,34,1.114,Mainstream,5.0
-Jacobs,36,1.114,Mainstream,4.55
-Applied Nutrition,80,1.11,Mainstream,3.0
-Tango,16,1.108,Mainstream,5.0
-Schwarzkopf,47,1.1,Mainstream,4.0
-Aussie,44,1.1,Mainstream,5.0
-Sun Hee,13,1.1,Mainstream,4.0
-Dolmio,39,1.1,Mainstream,4.4
-Corsodyl,14,1.1,Mainstream,2.85
-Got2b,11,1.1,Mainstream,5.0
-Dr Oetker,49,1.096,Mainstream,3.0
-Genius,16,1.09,Mainstream,4.5
-Oxo,26,1.088,Mainstream,4.85
-Pakeeza,10,1.086,Mainstream,4.15
-Yutaka,13,1.075,Mainstream,5.0
-Comfort,39,1.071,Mainstream,4.5
-Glade,42,1.071,Mainstream,4.5
-Lucozade,27,1.071,Mainstream,4.9
-Monster,41,1.071,Mainstream,5.0
-Nivea,153,1.06,Mainstream,4.9
-McVitie's,69,1.057,Mainstream,3.8
-Reese's,24,1.057,Mainstream,3.4
-Sensodyne,22,1.05,Mainstream,3.75
-Warburtons,29,1.041,Mainstream,3.65
-Morliny,14,1.013,Mainstream,4.3
-Truyu,12,1.0,Mainstream,5.0
-Vo5,21,1.0,Mainstream,5.0
-Bebeto,13,1.0,Mainstream,5.0
-Monday,15,1.0,Mainstream,5.0
-Merchant Gourmet,18,1.0,Mainstream,4.65
-Mr Muscle,10,1.0,Mainstream,3.35
-Head & Shoulders,47,1.0,Mainstream,5.0
-Schar,27,1.0,Mainstream,4.7
-Tetley,27,1.0,Mainstream,5.0
-Taj,13,1.0,Mainstream,
-Cherry Blossom,15,1.0,Mainstream,5.0
-Baxters,32,1.0,Mainstream,3.2
-Fray Bentos,19,1.0,Mainstream,1.8
-SlimFast,17,1.0,Mainstream,3.0
-McCoy's,18,1.0,Mainstream,1.85
-Nature Valley,13,1.0,Mainstream,4.65
-Herbal Essences,35,1.0,Mainstream,3.7
-Mutti,21,1.0,Mainstream,4.8
-Walkers,34,1.0,Mainstream,5.0
-Nando's,25,1.0,Mainstream,
-Itsu,20,1.0,Mainstream,4.9
-Laila,39,1.0,Mainstream,5.0
-Dr Pepper,16,0.952,Mainstream,4.0
-Fanta,27,0.952,Mainstream,5.0
-Prime,12,0.952,Mainstream,5.0
-Osem,15,0.95,Mainstream,5.0
-KTC,45,0.95,Mainstream,4.7
-Shana,21,0.95,Mainstream,
-Pringles,20,0.943,Mainstream,5.0
-Johnson's,30,0.933,Mainstream,4.7
-Lipton,17,0.929,Mainstream,4.2
-Cif,16,0.928,Mainstream,4.7
-Get More Vits,12,0.926,Mainstream,4.8
-Loyd Grossman,25,0.925,Mainstream,4.7
-Dole,17,0.925,Mainstream,4.5
-Rubicon,32,0.912,Mainstream,5.0
-Yeo Valley,19,0.909,Mainstream,5.0
-Ufit,10,0.909,Mainstream,4.2
-My Protein,10,0.909,Mainstream,4.2
-Ocean Spray,11,0.905,Mainstream,4.1
-Pepsi,33,0.905,Mainstream,4.8
-Tahira,11,0.9,Mainstream,4.0
-Princes,50,0.9,Mainstream,3.55
-Simple,45,0.9,Mainstream,4.3
-Palmers,10,0.9,Mainstream,5.0
-Flash,38,0.893,Mainstream,4.3
-Organix,36,0.883,Mainstream,4.8
-Kiddylicious,50,0.883,Mainstream,4.8
-Ambrosia,34,0.875,Mainstream,4.85
-Nairn's,16,0.875,Mainstream,5.0
-Kohinoor,11,0.875,Mainstream,5.0
-Schwartz,182,0.875,Mainstream,4.6
-Indus,115,0.875,Mainstream,4.0
-Naked,13,0.875,Mainstream,4.05
-Patak's,33,0.875,Mainstream,4.9
-Branston,19,0.875,Mainstream,5.0
-Cake Decor,26,0.875,Mainstream,1.0
-Sharwood's,56,0.875,Mainstream,4.7
-Nairns,10,0.866,Mainstream,5.0
-Oatly,15,0.864,Mainstream,4.95
-Hardys,12,0.862,Mainstream,
-Duck,32,0.857,Mainstream,5.0
-Febreze,73,0.857,Mainstream,4.5
-Nakd,10,0.857,Mainstream,4.9
-Ryvita,18,0.857,Mainstream,4.9
-Seabrook,21,0.857,Mainstream,4.1
-Dettol,48,0.857,Mainstream,4.55
-Buchanan's,13,0.857,Mainstream,3.0
-Fox's,26,0.857,Mainstream,4.8
-Pro:Voke,12,0.85,Value,4.5
-Whitworths,27,0.85,Value,4.0
-Alpro,42,0.841,Value,3.75
-Piccolo,32,0.833,Value,5.0
-McGuigan,25,0.828,Value,5.0
-Bibigo,15,0.825,Value,5.0
-Dishmatic,10,0.814,Value,2.3
-Nurofen,20,0.8,Value,5.0
-Vaseline,21,0.8,Value,4.3
-Wright's,11,0.8,Value,4.35
-Colgate,82,0.8,Value,4.5
-Lynx,64,0.79,Value,4.0
-Go Ahead,10,0.786,Value,3.3
-Listerine,14,0.78,Value,4.8
-Golden Wonder,12,0.771,Value,4.3
-Silvikrin,10,0.76,Value,5.0
-I Heart,10,0.759,Value,
-Rock Face,11,0.75,Value,4.95
-Lee Kum Kee,13,0.75,Value,2.6
-Regal,26,0.75,Value,4.1
-Nissin,20,0.75,Value,4.7
-Old El Paso,43,0.75,Value,4.25
-Napolina,33,0.75,Value,5.0
-Knorr,27,0.75,Value,4.7
-Dove,109,0.75,Value,4.9
-Vimto,25,0.75,Value,4.15
-Heinz,195,0.75,Value,4.8
-Snug Bums,10,0.75,Value,2.85
-Schweppes,17,0.738,Value,3.7
-Batiste,13,0.73,Value,5.0
-BrewDog,50,0.724,Value,
-Zoflora,20,0.714,Value,5.0
-Maynards Bassetts,15,0.714,Value,3.0
-Haribo,42,0.714,Value,5.0
-Wagamama,14,0.7,Value,3.2
-Ashoka,11,0.7,Value,
-Spontex,19,0.7,Value,3.8
-Grace,24,0.7,Value,4.45
-Tampax,17,0.7,Value,2.0
-Ben's,39,0.7,Value,4.4
-Volvic,18,0.69,Value,4.55
-Fuel 10k,24,0.69,Value,4.8
-Hovis,10,0.685,Value,
-Always,65,0.68,Value,4.0
-Cow & Gate,48,0.667,Value,4.7
-Daise,13,0.666,Value,5.0
-Mitchum,17,0.66,Value,2.75
-Elastoplast,15,0.65,Value,4.0
-Polish Specialities,12,0.65,Value,4.2
-Del Monte,21,0.65,Value,3.5
-Morrisons,1879,0.65,Value,3.8
-Kleenex,16,0.643,Value,4.8
-Bloo,18,0.642,Value,2.7
-Mentos,24,0.642,Value,3.7
-Rowntree's,13,0.629,Value,3.7
-Skittles,12,0.629,Value,4.1
-Old Spice,10,0.625,Value,1.65
-Thatchers,19,0.621,Value,
-Buxton,10,0.61,Value,5.0
-Timotei,11,0.6,Value,5.0
-Pot Noodle,24,0.6,Value,4.0
-Sanex,30,0.6,Value,4.9
-Maggi,31,0.6,Value,4.05
-Technic,20,0.6,Value,5.0
-Batchelors,57,0.6,Value,4.3
-Galpharm,13,0.6,Value,5.0
-Sure,44,0.59,Value,4.6
-Ainsley Harriott,20,0.588,Value,4.5
-Northern Monk,18,0.576,Value,
-Maryland,10,0.571,Value,4.85
-Swizzels,20,0.571,Value,5.0
-Arla,35,0.568,Value,4.3
-Imperial Leather,12,0.55,Value,4.0
-Rajah,20,0.55,Value,5.0
-Grenade,15,0.54,Value,5.0
-Ella's Kitchen,92,0.54,Value,4.75
-Ellas Kitchen,13,0.54,Value,4.4
-Highland Spring,14,0.512,Value,5.0
-Domestos,20,0.5,Value,3.5
-Barilla,13,0.5,Value,5.0
-Tribe,10,0.5,Value,1.5
-Myprotein,45,0.5,Value,4.0
-Hartley's,39,0.5,Value,4.15
-Sweetzone,11,0.5,Value,2.65
-Shine,31,0.5,Value,1.0
-Tilda,40,0.5,Value,5.0
-Cofresh,26,0.5,Value,4.75
-Sunfeast,11,0.5,Value,5.0
-Fulfil,12,0.49,Value,5.0
-Kopparberg,25,0.483,Value,
-Harpic,13,0.471,Value,4.15
-Kirkstall,10,0.458,Value,
-Lindahls,11,0.455,Value,4.35
-Little Freddie,13,0.45,Value,5.0
-7Th Heaven,18,0.45,Value,3.5
-Aquafresh,15,0.44,Value,3.7
-Au Vodka,10,0.414,Value,
-Hobgoblin,12,0.406,Value,
-Wisdom,11,0.4,Value,3.9
-Nutmeg,122,0.4,Value,4.65
-Bodyform,19,0.4,Value,5.0
-Morrisons Savers,25,0.371,Value,3.7
-Palmolive,19,0.36,Value,3.5
-Radox,29,0.35,Value,5.0
-HiPP Organic,28,0.333,Value,
-Carex,17,0.33,Value,5.0
-Colman's,28,0.31,Value,3.5
-Warrior,23,0.3,Value,3.0
-Sandford Orchards,13,0.299,Value,
-Keep It Handy,12,0.286,Value,2.6
-Astonish,44,0.286,Value,4.75
-Novo,10,0.25,Value,4.0
-Alberto Balsam,11,0.22,Value,5.0
-Impulse,11,0.2,Value,4.0
-Muller,12,0.182,Value,4.5
-Original Source,13,0.164,Value,5.0
+Nicorette,13,4.364,Premium,0.0
+Toblerone,14,3.714,Premium,0.0
+Pampers,72,3.667,Premium,0.0
+Seven Seas,20,3.545,Premium,0.0
+Aptamil,26,3.042,Premium,4.7
+Mam,13,3.0,Premium,0.0
+Optimum Nutrition,12,2.909,Premium,0.0
+Taylors,10,2.875,Premium,4.65
+Ariel,28,2.857,Premium,0.0
+Shazan,10,2.8,Premium,3.0
+Jack Daniel's,10,2.786,Premium,4.75
+Sma,14,2.734,Premium,4.6
+Tassimo,16,2.65,Premium,4.4
+Finish,20,2.642,Premium,0.0
+Oral-B,44,2.581,Premium,0.0
+Persil,29,2.571,Premium,0.0
+Lindt,37,2.571,Premium,0.0
+Nescafe,25,2.5,Premium,4.6
+Olay,18,2.5,Premium,0.0
+Kenco,15,2.5,Premium,4.5
+Kendamil,15,2.5,Premium,0.0
+Bold,28,2.5,Premium,0.0
+Monster,36,2.364,Premium,0.0
+Shazans,13,2.35,Premium,1.7
+San Pellegrino,12,2.318,Premium,3.6
+J2O,13,2.273,Premium,0.0
+Durex,24,2.182,Premium,0.0
+Niquitin,11,2.182,Premium,0.0
+Vanish,14,2.072,Premium,0.0
+Garnier,62,2.062,Premium,0.0
+Nala's,10,2.042,Premium,0.0
+Vileda,11,2.0,Premium,0.0
+Royal,15,2.0,Premium,3.9
+Tommee Tippee,26,2.0,Premium,0.0
+Childs Farm,21,2.0,Premium,0.0
+Nice 'N Easy,24,2.0,Premium,0.0
+Nuby,30,2.0,Premium,0.0
+Fever-Tree,33,1.932,Premium,5.0
+L'Oreal,95,1.875,Premium,0.0
+Gillette Venus,10,1.875,Premium,0.0
+Gillette,33,1.875,Premium,0.0
+Gaviscon,29,1.8,Premium,0.0
+Clairol,27,1.75,Premium,0.0
+Irn-Bru,17,1.705,Premium,3.0
+Andrex,19,1.7,Premium,3.0
+John Frieda,23,1.665,Premium,0.0
+Fairy,86,1.642,Premium,0.0
+Vitawell,12,1.636,Premium,0.0
+Live,22,1.625,Premium,0.0
+Jahan,11,1.625,Premium,0.0
+Filippo Berio,10,1.622,Premium,1.5
+Fanta,25,1.591,Premium,2.0
+Rascals,13,1.583,Premium,5.0
+Surf,20,1.571,Premium,0.5
+Air Wick,50,1.571,Premium,0.0
+Quaker,30,1.525,Premium,2.4
+Loyd Grossman,16,1.5,Premium,4.7
+Herbal Essences,23,1.5,Premium,0.0
+Rowse,11,1.5,Premium,3.0
+The Original Patty Co.,11,1.5,Premium,2.0
+Nature Valley,15,1.5,Premium,4.5
+The Spice Tailor,13,1.5,Premium,4.9
+Najma,17,1.475,Premium,3.0
+Aveeno,23,1.455,Premium,0.0
+Bassetts,12,1.455,Premium,0.0
+SlimFast,12,1.455,Premium,2.15
+Bonne Maman,10,1.438,Premium,4.9
+Pringles,11,1.429,Premium,0.0
+Maltesers,11,1.429,Premium,0.0
+Lenor,74,1.429,Premium,0.0
+Wrigley's Extra,13,1.429,Premium,0.0
+SokoLow,14,1.412,Premium,3.7
+Hellmann's,10,1.4,Premium,1.0
+Tena,24,1.398,Premium,4.0
+ZULEKHA,10,1.391,Premium,0.5
+Estrella,10,1.375,Premium,0.0
+Nando's,19,1.375,Premium,5.0
+Twinings,19,1.375,Premium,4.4
+Freixenet,12,1.357,Premium,3.9
+Kellogg's,32,1.356,Premium,3.9
+Kinder,27,1.343,Premium,0.0
+Huggies,23,1.333,Premium,1.3
+Sharwood's,26,1.325,Premium,4.3
+Morrisons The Best,138,1.304,Premium,3.5
+Dolmio,23,1.3,Premium,4.5
+Doritos,10,1.286,Premium,3.0
+Eat Real,11,1.286,Premium,4.2
+Scholl,12,1.264,Premium,0.0
+Coca-Cola,42,1.262,Premium,0.5
+Walkers,57,1.257,Premium,3.3
+Head & Shoulders,35,1.25,Premium,0.0
+Patak's,27,1.25,Premium,4.4
+Red Bull,30,1.25,Premium,0.0
+Jordans,10,1.25,Premium,4.9
+Johnson's,22,1.25,Premium,1.0
+Corsodyl,10,1.25,Premium,2.6
+Tropical Sun,12,1.248,Premium,0.5
+Warburtons,25,1.218,Premium,4.0
+Vitabiotics,18,1.204,Premium,0.0
+Nestle,29,1.2,Premium,3.3
+Sensodyne,16,1.188,Premium,1.4
+Tango,16,1.17,Premium,4.0
+Listerine,11,1.165,Premium,0.0
+Guinness,14,1.154,Premium,5.0
+Gordon's,13,1.143,Mainstream,0.0
+Cadbury,119,1.143,Mainstream,0.0
+Comfort,38,1.143,Mainstream,0.0
+Galaxy,23,1.143,Mainstream,0.0
+Barr,12,1.136,Mainstream,4.15
+Vicks,14,1.128,Mainstream,0.0
+Aussie,33,1.125,Mainstream,0.0
+Mutti,12,1.125,Mainstream,4.8
+Applied Nutrition,38,1.113,Mainstream,2.3
+Vitfix,29,1.091,Mainstream,0.0
+Old El Paso,28,1.088,Mainstream,3.55
+Kallo,11,1.086,Mainstream,4.3
+Unbranded,21,1.071,Mainstream,0.0
+Schar,23,1.071,Mainstream,4.8
+Whitworths,16,1.05,Mainstream,3.5
+Starbucks,20,1.046,Mainstream,2.45
+Bibigo,12,1.038,Mainstream,0.0
+Lucozade,24,1.034,Mainstream,0.0
+Nomo,16,1.029,Mainstream,0.0
+Reese's,12,1.028,Mainstream,0.0
+Jacobs,30,1.014,Mainstream,3.55
+Yutaka,11,1.0,Mainstream,4.7
+Rubicon,23,1.0,Mainstream,4.0
+Graze,12,1.0,Mainstream,4.15
+Glade,42,1.0,Mainstream,0.0
+Laila,37,1.0,Mainstream,0.0
+Indus,80,1.0,Mainstream,1.0
+KTC,34,1.0,Mainstream,3.7
+Baxters,15,1.0,Mainstream,2.7
+Dr Oetker,11,1.0,Mainstream,0.0
+Dr Pepper,12,1.0,Mainstream,1.35
+McCoy's,11,1.0,Mainstream,3.3
+Oxo,17,1.0,Mainstream,4.9
+Myprotein,42,1.0,Mainstream,0.0
+Schwartz,127,1.0,Mainstream,4.4
+Lynx,31,0.988,Mainstream,0.0
+Pepsi,31,0.977,Mainstream,0.0
+Dr. Oetker,19,0.975,Mainstream,0.0
+Rakusen's,14,0.962,Mainstream,0.0
+Blue Dragon,22,0.962,Mainstream,4.6
+Seabrook,11,0.943,Mainstream,3.7
+Dove,63,0.938,Mainstream,0.0
+Colgate,48,0.938,Mainstream,1.5
+BrewDog,21,0.929,Mainstream,3.0
+Sprite,10,0.921,Mainstream,0.0
+KitKat,16,0.914,Mainstream,0.0
+Ryvita,11,0.914,Mainstream,4.9
+Prime,12,0.909,Mainstream,0.0
+Robinsons,35,0.909,Mainstream,3.7
+John West,27,0.9,Mainstream,3.6
+Cherry Blossom,16,0.893,Mainstream,0.0
+Organix,32,0.892,Mainstream,4.8
+McVitie's,48,0.886,Mainstream,3.3
+Nairn's,21,0.882,Mainstream,4.6
+Maggi,14,0.875,Mainstream,4.35
+TRESemme,26,0.875,Mainstream,0.0
+Taj,12,0.875,Mainstream,4.4
+Schweppes,13,0.864,Mainstream,3.3
+Duck,32,0.857,Mainstream,0.0
+Belvita,13,0.857,Mainstream,4.7
+Dettol,38,0.857,Mainstream,0.0
+Febreze,63,0.857,Mainstream,0.0
+Cif,10,0.857,Mainstream,2.5
+Fox's,19,0.857,Mainstream,4.4
+Morrisons Organic,18,0.857,Mainstream,3.6
+Heinz,136,0.85,Value,4.3
+Batchelors,19,0.825,Value,4.4
+Nivea,64,0.825,Value,0.0
+Shana,17,0.825,Value,3.8
+Rennie,14,0.818,Value,0.0
+Pantene,34,0.812,Value,0.0
+Osem,12,0.8,Value,4.45
+Bloo,17,0.786,Value,1.0
+Flash,27,0.786,Value,1.0
+Kiddylicious,38,0.767,Value,3.0
+Regal,22,0.75,Value,4.0
+Kleenex,16,0.738,Value,1.0
+Nurofen,20,0.727,Value,0.0
+Zoflora,16,0.714,Value,3.0
+Dishmatic,14,0.714,Value,1.0
+Haribo,29,0.714,Value,1.0
+Volvic,13,0.705,Value,4.3
+Ambrosia,16,0.7,Value,4.85
+Cow & Gate,26,0.7,Value,0.0
+Ben's,22,0.7,Value,4.25
+Always,57,0.688,Value,0.0
+Simple,20,0.688,Value,2.5
+Baylis & Harding,11,0.688,Value,4.0
+Vimto,21,0.682,Value,0.0
+Tampax,15,0.682,Value,0.0
+Sure,30,0.655,Value,0.0
+Domestos,13,0.643,Value,3.3
+Thatchers,17,0.643,Value,5.0
+Kopparberg,19,0.643,Value,0.0
+Elastoplast,16,0.636,Value,0.0
+Morrisons,870,0.63,Value,3.5
+Hartley's,18,0.625,Value,3.35
+Sanex,27,0.625,Value,0.0
+Mitchum,12,0.625,Value,2.15
+Sweetzone,10,0.625,Value,3.35
+Buxton,10,0.603,Value,4.55
+Lee Kum Kee,12,0.6,Value,0.0
+Cofresh,19,0.575,Value,3.0
+Moth,10,0.571,Value,0.0
+Rowntree's,12,0.571,Value,3.25
+Highland Spring,13,0.568,Value,5.0
+Piccolo,17,0.567,Value,5.0
+Nutmeg,71,0.567,Value,3.0
+Grace,15,0.55,Value,3.4
+Rajah,20,0.55,Value,3.75
+Del Monte,12,0.55,Value,1.7
+Aquafresh,10,0.55,Value,3.0
+Galpharm,15,0.545,Value,0.0
+Swizzels,14,0.542,Value,2.0
+Bodyform,10,0.5,Value,0.0
+Palmolive,12,0.5,Value,0.0
+Napolina,10,0.5,Value,1.65
+Colman's,15,0.5,Value,3.2
+Ella's Kitchen,77,0.5,Value,0.0
+Wisdom,10,0.5,Value,2.65
+Vaseline,15,0.5,Value,2.0
+Radox,21,0.5,Value,0.0
+Sunfeast,13,0.5,Value,0.0
+Grenade,16,0.491,Value,0.0
+Au Vodka,10,0.486,Value,0.0
+Little Freddie,15,0.483,Value,5.0
+Smirnoff,15,0.464,Value,0.0
+Original Source,10,0.412,Value,5.0
+Pot Noodle,13,0.375,Value,3.6
+Warrior,20,0.364,Value,0.0
+Bacardi,10,0.357,Value,2.35
+HiPP Organic,21,0.333,Value,0.0
+Morrisons Savers,18,0.321,Value,3.95
+Keep It Handy,11,0.286,Value,1.0
+Astonish,24,0.286,Value,4.5

@@ -29,7 +29,7 @@
 ║   ██║ ╚═╝ ██║╚██████╔╝██║  ██║██║  ██║██║███████║╚██████╔╝██║ ╚████║     ║
 ║   ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝     ║
 ║                                                                          ║
-║   GROCERY MARKET INTELLIGENCE · 18,100 PRODUCTS · STREAMLIT + TABLEAU    ║
+║   GROCERY MARKET INTELLIGENCE · 11,208 PRODUCTS · STREAMLIT + TABLEAU    ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -40,7 +40,7 @@
 <div align="center">
   <img src="reports/figures/dashboard_overview.png" width="880" alt="Interactive dashboard" />
   <br/>
-  <sub><i>Interactive Streamlit dashboard — live filters, 5 tab, 12+ chart · over 18,100 real scraped products</i></sub>
+  <sub><i>Interactive Streamlit dashboard — live filters, 5 tab, 12+ chart · over 11,208 real scraped products</i></sub>
 </div>
 
 <br/>
@@ -54,7 +54,7 @@ streamlit run app/dashboard.py     # → http://localhost:8501
 ## 🧠 Overview
 
 **Morrisons Market Intelligence** is an end-to-end data analyst project: it takes
-the hard-to-get output of a retail scraping pipeline (18,100 products, 60 raw
+the hard-to-get output of a retail scraping pipeline (11,208 products, 60 raw
 columns of semi-structured data), cleans it, and turns it into **actionable
 competitive insight** for pricing, marketing, and product teams — delivered as an
 interactive dashboard, a business report, and a Tableau blueprint.
@@ -67,13 +67,13 @@ Continues the data-collection pipeline from
 
 | Metric | Value |
 |-------:|:------|
-| 🎯 Source | groceries.morrisons.com — real scraped retail data |
-| 📦 Products analysed | **18,100** (from 18,291 raw rows) |
+| 🎯 Source | groceries.morrisons.com — **fresh scrape 2026** (new API) |
+| 📦 Products analysed | **11,208** (from 18,291 raw rows) |
 | 🗂️ Categories | 15 retail categories |
-| 🏢 Brands | **2,600** unique brands |
+| 🏢 Brands | **1,955** unique brands |
 | 💷 Price range | £0.15 – £300.00 (median **£2.70**) |
-| 🏷️ On promotion | **26.4%** of SKUs (median discount −23.1%) |
-| ⭐ Price↔quality | Spearman ρ = **0.08** — almost no correlation |
+| 🏷️ On promotion | **21.9%** of SKUs (median discount −25.0%) |
+| ⭐ Price↔quality | Spearman ρ = **−0.145** — cheaper rated higher |
 | 🧩 Key trap caught | Column `Price` = *display* price (often "Was"); real promo price hidden in `others3` |
 | 🖥️ Deliverables | Streamlit app · 10 charts · 10 insight tables · business `REPORT.md` · **Tableau bundle (`.hyper` + `.tds`, verified opening clean)** |
 | 📁 Outputs | `reports/figures/` · `reports/tables/` · `data/tableau/` · `REPORT.md` |
@@ -282,7 +282,7 @@ python src/build_tableau_extracts.py
 Pipeline run — Morrisons UK market intelligence
 
 ✅ Parse    morrisons_products.csv (18,291 rows, 60 cols)
-              → 18,100 clean rows · 24 cols · price 100% valid
+              → 11,208 clean rows · 24 cols · price 100% valid
 ✅ Parse    rating 32.9% · promo 26.6% · unit price 100% recovered
 ✅ Analyse  price · promo · brand positioning · value · own-brand gap
 ✅ Charts   10 visualisations generated
