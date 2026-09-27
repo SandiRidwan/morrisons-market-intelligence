@@ -1,0 +1,30 @@
+# Data mentah besar — tidak di-commit (45 MB; sumber ada di repo scraper)
+data/raw/*.csv
+data/raw/*.rar
+!data/raw/.gitkeep
+
+# Data turunan: data bersih DI-COMMIT agar app bisa langsung jalan (~15 MB).
+# File besar lain diabaikan.
+data/processed/*.csv
+!data/processed/morrisons_clean.csv
+!data/processed/.gitkeep
+data/tableau/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Scraper (repo terpisah, hanya di-clone lokal)
+scraper/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+_probe*.py

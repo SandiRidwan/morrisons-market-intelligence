@@ -1,0 +1,27 @@
+{
+  "source": "Morrisons UK (groceries.morrisons.com)",
+  "products_raw": 18291,
+  "products_analyzed": 18100,
+  "categories": 15,
+  "brands": 2600,
+  "price_min": 0.15,
+  "price_median": 2.7,
+  "price_max": 300.0,
+  "promo_rate_pct": 26.4,
+  "median_discount_pct": 23.1,
+  "rated_products_pct": 33.1,
+  "rating_vs_price_spearman": 0.08,
+  "data_quality": {
+    "rows_raw": 18291,
+    "rows_clean": 18100,
+    "rows_dropped": 191,
+    "duplicate_products_dropped": 0,
+    "missing_rating_pct": 66.9,
+    "missing_brand_pct": 0.0
+  },
+  "notes": [
+    "0 produk duplikat (SKU sama) dihapus.",
+    "66.9% produk belum punya rating (analisis rating memakai subset yang tersedia).",
+    "Harga promo & diskon dipulihkan dari field teks 'others3/4/5'."
+  ]
+}
