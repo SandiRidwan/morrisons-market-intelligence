@@ -36,3 +36,9 @@ _probe*.py
 
 # Tableau recovery files
 data/tableau/**/~*
+
+# Kredensial (JANGAN pernah commit)
+kunci.json
+*.json.key
+credentials.json
+*service_account*
