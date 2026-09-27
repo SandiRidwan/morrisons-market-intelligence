@@ -42,3 +42,15 @@ kunci.json
 *.json.key
 credentials.json
 *service_account*
+
+# ═══ KREDENSIAL — JANGAN PERNAH COMMIT ═══
+# Google Service Account / API keys
+*service_account*.json
+film-*.json
+*-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].json
+kunci.json
+credentials.json
+*credentials*.json
+.env
+*.key
+*.pem
