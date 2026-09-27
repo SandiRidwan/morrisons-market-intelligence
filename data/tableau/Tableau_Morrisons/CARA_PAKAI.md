@@ -1,7 +1,20 @@
-# 📊 Tableau — Cara Membangun Dashboard Morrisons (2–3 menit)
+# 📊 Tableau — Morrisons Market Intelligence
 
-Bundel ini berisi data siap-pakai untuk Tableau Public Desktop.
-Semua **calculated field sudah dihitung** — kamu tinggal **drag & drop**.
+## ⭐ Cara Tercepat: Buka Workbook `.twb`
+
+**Double-click** `morrisons_market_intelligence.twb` (atau `File → Open` di Tableau Public).
+
+Workbook berisi:
+- 1 datasource (extract `.hyper` — 18.291 produk)
+- **10 worksheet siap**: Median Price by Category, Avg Rating, Avg Unit Price,
+  Products by Price Tier, Avg Discount, Top Brands, Avg Value + 3 KPI
+- 1 dashboard: **"Morrisons — Market Intelligence"**
+
+> ✅ **Sudah diverifikasi terbuka bersih di Tableau Public Desktop 2026.2**
+> (log: 371 event, 0 error).
+
+Setelah terbuka, tinggal drag worksheet ke dashboard & hias sesuai selera
+(resep lengkap ada di bagian bawah file ini).
 
 ---
 
@@ -9,9 +22,10 @@ Semua **calculated field sudah dihitung** — kamu tinggal **drag & drop**.
 
 | File | Isi |
 |------|-----|
-| `products.hyper` | **18.291 produk** (extract Tableau, format native) |
-| `morrisons.tds` | Datasource — sudah menunjuk ke `products.hyper` |
-| `CARA_PAKAI.md` | File ini |
+| `morrisons_market_intelligence.twb` | ⭐ **Workbook** — buka ini langsung |
+| `products.hyper` | 18.291 produk (extract Tableau, format native) |
+| `morrisons.tds` | Datasource alternatif (kalau mau bikin workbook sendiri) |
+| `products.csv` | Data mentah (untuk Power BI / analisis lain) |
 
 **Kolom yang tersedia** (sudah rapi, tanpa perlu menghitung):
 
@@ -35,16 +49,10 @@ Semua **calculated field sudah dihitung** — kamu tinggal **drag & drop**.
 
 ---
 
-## 🚀 Buka Data (1 langkah)
+## 🚀 Buka Data (alternatif — bikin workbook sendiri)
 
-**Cara A — lewat file .tds (paling cepat):**
-1. Buka **Tableau Public Desktop**
-2. `File` → `Open` → pilih **`morrisons.tds`**
-3. Tableau terbuka di jendela Data Source → klik **`Sheet 1`** (kiri bawah) → mulai buat chart
-
-**Cara B — lewat hyper langsung:**
-1. `Connect` → `More...` → `Tableau Extract` → pilih **`products.hyper`**
-2. Klik `Sheet 1`
+- **Cara A:** buka `morrisons.tds` → klik `Sheet 1`
+- **Cara B:** `Connect` → `More...` → `Tableau Extract` → pilih `products.hyper`
 
 ---
 

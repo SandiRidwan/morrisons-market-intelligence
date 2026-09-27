@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook original-version="18.1" source-build="2025.2.2" source-platform="win" version="18.1" xml:base="https://localhost:8080">
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <DatagraphCoreV1 />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+  </document-format-change-manifest>
+  <datasources>
+    <datasource hasconnection="true" inline="true" name="federated.morrisons" caption="Morrisons Products" version="18.1">
+      <connection class="federated">
+        <named-connections>
+          <named-connection caption="Morrisons Products" name="hyper.morrisons" />
+        </named-connections>
+        <connection class="hyper" dbname="F:/PROJECT/Data Analyst Project/morrisons-market-intelligence/data/tableau/Tableau_Morrisons/products.hyper" schema="Extract" tablename="Extract" />
+        <relation connection="hyper.morrisons" name="Extract" table="[Extract].[Extract]" type="table" />
+      </connection>
+      <column datatype="string" name="[Category]" role="dimension" type="nominal" />
+      <column datatype="string" name="[Subcategory]" role="dimension" type="nominal" />
+      <column datatype="string" name="[Brand]" role="dimension" type="nominal" />
+      <column datatype="string" name="[Price Tier]" role="dimension" type="nominal" />
+      <column datatype="string" name="[Product]" role="dimension" type="nominal" />
+      <column datatype="boolean" name="[Is Promo]" role="dimension" type="nominal" />
+      <column datatype="real" name="[Effective Price]" role="measure" type="quantitative" />
+      <column datatype="real" name="[Price per 100g]" role="measure" type="quantitative" />
+      <column datatype="real" name="[Rating]" role="measure" type="quantitative" />
+      <column datatype="integer" name="[Reviews]" role="measure" type="quantitative" />
+      <column datatype="real" name="[Discount Pct]" role="measure" type="quantitative" />
+      <column datatype="real" name="[Value Score]" role="measure" type="quantitative" />
+      <column caption="Avg Price" datatype="real" name="[AvgPrice]" role="measure" type="quantitative">
+        <calculation class="tableau" formula="AVG([Effective Price])">
+        </calculation>
+      </column>
+      <column caption="Avg Rating" datatype="real" name="[AvgRating]" role="measure" type="quantitative">
+        <calculation class="tableau" formula="AVG([Rating])">
+        </calculation>
+      </column>
+      <column caption="Avg Unit Price" datatype="real" name="[AvgUnit]" role="measure" type="quantitative">
+        <calculation class="tableau" formula="AVG([Price per 100g])">
+        </calculation>
+      </column>
+      <column caption="Avg Discount" datatype="real" name="[AvgDiscount]" role="measure" type="quantitative">
+        <calculation class="tableau" formula="AVG([Discount Pct])">
+        </calculation>
+      </column>
+      <column caption="Products" datatype="integer" name="[Products]" role="measure" type="quantitative">
+        <calculation class="tableau" formula="COUNTD([Product])">
+        </calculation>
+      </column>
+      <column caption="Avg Value Score" datatype="real" name="[AvgValue]" role="measure" type="quantitative">
+        <calculation class="tableau" formula="AVG([Value Score])">
+        </calculation>
+      </column>
+      <layout dim-percentage="0.5" measure-percentage="0.5" dim-ordering="alphabetic" measure-ordering="alphabetic" show-structure="true" />
+      <semantic-values>
+        <semantic-value key="[Category].[none:Category:nk]" value='"Food Cupboard"' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name="Median Price by Category">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column datatype="string" name="[Category]" role="dimension" type="nominal" />
+            <column-instance column="[Category]" derivation="None" name="[none:Category:nk]" pivot="key" type="nominal" />
+            <column caption="Avg Price" datatype="real" name="[AvgPrice]" role="measure" type="quantitative" />
+            <column-instance column="[AvgPrice]" derivation="User" name="[usr:AvgPrice:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Bar" />
+          </pane>
+        </panes>
+        <rows>[federated.morrisons].[none:Category:nk]</rows>
+        <cols>[federated.morrisons].[usr:AvgPrice:qk]</cols>
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="Avg Rating by Category">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column datatype="string" name="[Category]" role="dimension" type="nominal" />
+            <column-instance column="[Category]" derivation="None" name="[none:Category:nk]" pivot="key" type="nominal" />
+            <column caption="Avg Rating" datatype="real" name="[AvgRating]" role="measure" type="quantitative" />
+            <column-instance column="[AvgRating]" derivation="User" name="[usr:AvgRating:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Bar" />
+          </pane>
+        </panes>
+        <rows>[federated.morrisons].[none:Category:nk]</rows>
+        <cols>[federated.morrisons].[usr:AvgRating:qk]</cols>
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="Avg Unit Price by Category">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column datatype="string" name="[Category]" role="dimension" type="nominal" />
+            <column-instance column="[Category]" derivation="None" name="[none:Category:nk]" pivot="key" type="nominal" />
+            <column caption="Avg Unit Price" datatype="real" name="[AvgUnit]" role="measure" type="quantitative" />
+            <column-instance column="[AvgUnit]" derivation="User" name="[usr:AvgUnit:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Bar" />
+          </pane>
+        </panes>
+        <rows>[federated.morrisons].[none:Category:nk]</rows>
+        <cols>[federated.morrisons].[usr:AvgUnit:qk]</cols>
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="Products by Price Tier">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column datatype="string" name="[Price Tier]" role="dimension" type="nominal" />
+            <column-instance column="[Price Tier]" derivation="None" name="[none:Price Tier:nk]" pivot="key" type="nominal" />
+            <column caption="Products" datatype="integer" name="[Products]" role="measure" type="quantitative" />
+            <column-instance column="[Products]" derivation="User" name="[usr:Products:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Bar" />
+          </pane>
+        </panes>
+        <rows>[federated.morrisons].[none:Price Tier:nk]</rows>
+        <cols>[federated.morrisons].[usr:Products:qk]</cols>
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="Avg Discount by Tier">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column datatype="string" name="[Price Tier]" role="dimension" type="nominal" />
+            <column-instance column="[Price Tier]" derivation="None" name="[none:Price Tier:nk]" pivot="key" type="nominal" />
+            <column caption="Avg Discount" datatype="real" name="[AvgDiscount]" role="measure" type="quantitative" />
+            <column-instance column="[AvgDiscount]" derivation="User" name="[usr:AvgDiscount:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Bar" />
+          </pane>
+        </panes>
+        <rows>[federated.morrisons].[none:Price Tier:nk]</rows>
+        <cols>[federated.morrisons].[usr:AvgDiscount:qk]</cols>
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="Top Brands">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column datatype="string" name="[Brand]" role="dimension" type="nominal" />
+            <column-instance column="[Brand]" derivation="None" name="[none:Brand:nk]" pivot="key" type="nominal" />
+            <column caption="Products" datatype="integer" name="[Products]" role="measure" type="quantitative" />
+            <column-instance column="[Products]" derivation="User" name="[usr:Products:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Bar" />
+          </pane>
+        </panes>
+        <rows>[federated.morrisons].[none:Brand:nk]</rows>
+        <cols>[federated.morrisons].[usr:Products:qk]</cols>
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="Avg Value by Tier">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column datatype="string" name="[Price Tier]" role="dimension" type="nominal" />
+            <column-instance column="[Price Tier]" derivation="None" name="[none:Price Tier:nk]" pivot="key" type="nominal" />
+            <column caption="Avg Value Score" datatype="real" name="[AvgValue]" role="measure" type="quantitative" />
+            <column-instance column="[AvgValue]" derivation="User" name="[usr:AvgValue:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Bar" />
+          </pane>
+        </panes>
+        <rows>[federated.morrisons].[none:Price Tier:nk]</rows>
+        <cols>[federated.morrisons].[usr:AvgValue:qk]</cols>
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="KPI Products">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column caption="Products" datatype="integer" name="[Products]" role="measure" type="quantitative" />
+            <column-instance column="[Products]" derivation="User" name="[usr:Products:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Text" />
+            <encodings>
+              <text column="[federated.morrisons].[usr:Products:qk]" />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="KPI Avg Price">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column caption="Avg Price" datatype="real" name="[AvgPrice]" role="measure" type="quantitative" />
+            <column-instance column="[AvgPrice]" derivation="User" name="[usr:AvgPrice:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Text" />
+            <encodings>
+              <text column="[federated.morrisons].[usr:AvgPrice:qk]" />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+    <worksheet name="KPI Avg Rating">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Morrisons Products" name="federated.morrisons" />
+          </datasources>
+          <datasource-dependencies datasource="federated.morrisons">
+            <column caption="Avg Rating" datatype="real" name="[AvgRating]" role="measure" type="quantitative" />
+            <column-instance column="[AvgRating]" derivation="User" name="[usr:AvgRating:qk]" pivot="key" type="quantitative" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Text" />
+            <encodings>
+              <text column="[federated.morrisons].[usr:AvgRating:qk]" />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <tooltip-style tooltip-mode="none" />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name="Morrisons — Market Intelligence">
+      <style />
+      <size maxheight="900" maxwidth="1400" minheight="900" minwidth="1400" sizing-mode="fixed" />
+      <zones>
+        <zone h="100000" id="1" type-v2="layout-basic" w="100000" x="0" y="0" />
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class="dashboard" name="Morrisons — Market Intelligence">
+      <cards>
+      </cards>
+      <viewpoint>
+        <zoom />
+      </viewpoint>
+    </window>
+  </windows>
+</workbook>
