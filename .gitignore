@@ -33,3 +33,6 @@ scraper/
 .DS_Store
 Thumbs.db
 _probe*.py
+
+# Tableau recovery files
+data/tableau/**/~*
