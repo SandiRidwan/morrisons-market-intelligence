@@ -8,7 +8,12 @@ data/raw/*.rar
 data/processed/*.csv
 !data/processed/morrisons_clean.csv
 !data/processed/.gitkeep
+
+# Tableau: commit bundel siap-pakai (.hyper + .tds + panduan), abaikan CSV besar
 data/tableau/*.csv
+!data/tableau/Tableau_Morrisons/
+data/tableau/Tableau_Morrisons/*.csv
+hyperd.log
 
 # Python
 __pycache__/

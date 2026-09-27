@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource formatted-name='morrisons' inline='false' source-platform='win' version='18.1' xml:base='https://localhost:8080' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='products' name='hyper.morrisons'>
+        <connection class='hyper' dbname='F:\PROJECT\Data Analyst Project\morrisons-market-intelligence\data\tableau\Tableau_Morrisons\products.hyper' schema='Extract' tablename='Extract' />
+      </named-connection>
+    </named-connections>
+    <relation connection='hyper.morrisons' name='Extract' table='[Extract].[Extract]' type='table' />
+  </connection>
+  <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+  <column datatype='string' name='[Subcategory]' role='dimension' type='nominal' />
+  <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+  <column datatype='string' name='[Price Tier]' role='dimension' type='nominal' />
+  <column datatype='string' name='[Product]' role='dimension' type='nominal' />
+  <column datatype='real' name='[Effective Price]' role='measure' type='quantitative' />
+  <column datatype='real' name='[Price per 100g]' role='measure' type='quantitative' />
+  <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+  <column datatype='integer' name='[Reviews]' role='measure' type='quantitative' />
+  <column datatype='real' name='[Discount Pct]' role='measure' type='quantitative' />
+  <column datatype='boolean' name='[Is Promo]' role='dimension' type='nominal' />
+  <column datatype='real' name='[Value Score]' role='measure' type='quantitative' />
+  <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+  <semantic-values />
+</datasource>

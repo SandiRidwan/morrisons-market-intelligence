@@ -7,7 +7,31 @@
 
 ---
 
-## 0. Persiapan Data (Wajib, sebelum buat sheet)
+## ⚡ Cara Tercepat: Pakai Bundel Siap-Pakai
+
+Daripada menyiapkan data + calculated field manual, pakai bundel yang **sudah jadi**:
+
+```
+data/tableau/Tableau_Morrisons/
+├── products.hyper      # 18.291 produk (extract native Tableau)
+├── morrisons.tds       # datasource (buka langsung di Tableau)
+└── CARA_PAKAI.md       # resep drag-and-drop 10 worksheet
+```
+
+Buka `morrisons.tds` di Tableau → semua kolom (`Category`, `Price Tier`,
+`Effective Price`, `Value Score`, …) **sudah dihitung** → tinggal drag.
+
+> Bundel ini dibuat oleh `src/build_tableau_hyper.py` dan **sudah diverifikasi
+> terbuka bersih di Tableau Public Desktop 2026.2** (nol error di log).
+>
+> ⚠️ Mencoba menulis file `.twb` penuh secara programatik **gagal** (error skema
+> `D2E8DA72`) — skema internal `.twb` terlalu ketat untuk disusun tanpa GUI.
+> Pelajaran: kirim data dalam format native (`.hyper`) + datasource (`.tds`),
+> bukan workbook penuh.
+
+---
+
+## 0. Persiapan Data (alternatif manual)
 
 ### 0.1 Koneksi
 - **Sumber:** `data/processed/morrisons_clean.csv` (Text file)

@@ -75,7 +75,7 @@ Continues the data-collection pipeline from
 | 🏷️ On promotion | **26.4%** of SKUs (median discount −23.1%) |
 | ⭐ Price↔quality | Spearman ρ = **0.08** — almost no correlation |
 | 🧩 Key trap caught | Column `Price` = *display* price (often "Was"); real promo price hidden in `others3` |
-| 🖥️ Deliverables | Streamlit app · 10 charts · 10 insight tables · business `REPORT.md` · Tableau blueprint |
+| 🖥️ Deliverables | Streamlit app · 10 charts · 10 insight tables · business `REPORT.md` · **Tableau bundle (`.hyper` + `.tds`, verified opening clean)** |
 | 📁 Outputs | `reports/figures/` · `reports/tables/` · `data/tableau/` · `REPORT.md` |
 
 </div>
@@ -232,7 +232,12 @@ morrisons-market-intelligence/
 ├── data/
 │   ├── raw/                       # raw scraped CSV (not committed — 45 MB)
 │   ├── processed/                 # clean CSV (committed — app runs on clone)
-│   └── tableau/                   # Tableau-ready extracts
+│   └── tableau/
+│       ├── Tableau_Morrisons/     # ⭐ ready-to-open bundle
+│       │   ├── products.hyper     #    18,291 products (native extract)
+│       │   ├── morrisons.tds      #    datasource — open this in Tableau
+│       │   └── CARA_PAKAI.md      #    drag-and-drop recipe
+│       └── tableau_products.csv   # flat CSV for Tableau/Power BI
 ├── reports/
 │   ├── figures/                   # 11 charts + dashboard screenshots
 │   ├── tables/                    # 10 insight tables (CSV)
