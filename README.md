@@ -8,11 +8,12 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10+-00FF88?style=for-the-badge&logo=python&logoColor=black)
 ![pandas](https://img.shields.io/badge/pandas-2.0-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Live_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://morrisons-market-intelligence-6efv7fvigz9jlrz6fhlmdm.streamlit.app/)
+[![Open Dashboard](https://img.shields.io/badge/▶_Live_Demo-Open_Dashboard-00FF88?style=for-the-badge)](https://morrisons-market-intelligence-6efv7fvigz9jlrz6fhlmdm.streamlit.app/)
 ![Plotly](https://img.shields.io/badge/Plotly-Interactive-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-Blueprint-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Products](https://img.shields.io/badge/Products-18%2C100-00FF88?style=for-the-badge)
-![Categories](https://img.shields.io/badge/Categories-15-00FF88?style=for-the-badge)
+![Products](https://img.shields.io/badge/Products-11%2C208-00FF88?style=for-the-badge)
+![Categories](https://img.shields.io/badge/Categories-13-00FF88?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-0D1117?style=for-the-badge)
 
 </div>
@@ -38,12 +39,18 @@
 ## 🎬 Demo
 
 <div align="center">
-  <img src="reports/figures/dashboard_overview.png" width="880" alt="Interactive dashboard" />
-  <br/>
-  <sub><i>Interactive Streamlit dashboard — live filters, 5 tab, 12+ chart · over 11,208 real scraped products</i></sub>
+
+### ▶️ [**Buka Live Dashboard →**](https://morrisons-market-intelligence-6efv7fvigz9jlrz6fhlmdm.streamlit.app/)
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://morrisons-market-intelligence-6efv7fvigz9jlrz6fhlmdm.streamlit.app/)
+
+<img src="reports/figures/dashboard_overview.png" width="880" alt="Interactive dashboard" />
+<br/>
+<sub><i>Interactive Streamlit dashboard — live filters, 5 tabs, 12+ charts · 11,208 real scraped products</i></sub>
+
 </div>
 
-<br/>
+**Run locally:**
 
 ```bash
 streamlit run app/dashboard.py     # → http://localhost:8501
