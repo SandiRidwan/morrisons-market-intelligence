@@ -25,6 +25,7 @@ import streamlit as st
 # --- path agar bisa impor modul src/ ---
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
+import explanations as X  # noqa: E402
 
 CLEAN_CSV = ROOT / "data" / "processed" / "morrisons_clean.csv"
 
@@ -175,6 +176,9 @@ tab_ov, tab_price, tab_promo, tab_brand, tab_value = st.tabs(
 
 # ============================== OVERVIEW ==============================
 with tab_ov:
+    X.render("kpi", st=st)
+    X.render("price_by_category", st=st)
+    X.render("portfolio", st=st)
     c1, c2 = st.columns([1.1, 1])
     with c1:
         t = (df.groupby("cat1")["effective_price"].median()
@@ -227,6 +231,7 @@ with tab_ov:
 
 # ============================== PRICING ==============================
 with tab_price:
+    X.render("rating_vs_price", st=st)
     c1, c2 = st.columns(2)
     with c1:
         fig = px.box(df[df["effective_price"] <= price_range[1]],
@@ -274,6 +279,7 @@ with tab_price:
 
 # ============================== PROMOTIONS ==============================
 with tab_promo:
+    X.render("promo_by_category", st=st)
     c1, c2 = st.columns(2)
     with c1:
         t = (df.groupby("cat1")
@@ -330,6 +336,8 @@ with tab_promo:
 
 # ============================== BRANDS ==============================
 with tab_brand:
+    X.render("brand_positioning", st=st)
+    X.render("own_brand", st=st)
     c1, c2 = st.columns([1, 1])
     with c1:
         t = df["brand"].value_counts().head(20).sort_values().reset_index()
@@ -376,6 +384,7 @@ with tab_brand:
 
 # ============================== VALUE ==============================
 with tab_value:
+    X.render("value_winners", st=st)
     st.markdown("#### ⭐ Top value-for-money products")
     st.caption(f"Rating tinggi + harga per-100g rendah · min {min_reviews} reviews")
     sub = df[(df["reviews"] >= min_reviews) & df["rating"].notna()
