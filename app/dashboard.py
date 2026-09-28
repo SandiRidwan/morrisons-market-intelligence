@@ -248,8 +248,16 @@ with tab_price:
                          labels={"effective_price": "Effective price (£)",
                                  "rating": "Rating"})
         fig.update_traces(marker=dict(size=5))
+        # Spearman dihitung manual (rank -> Pearson) agar TIDAK butuh scipy
+        # (scipy tidak tersedia di Streamlit Cloud secara default).
+        _rr = sub[["effective_price", "rating"]].dropna()
+        if len(_rr) > 2:
+            _rho = (_rr["effective_price"].rank()
+                    .corr(_rr["rating"].rank()))  # Spearman = Pearson of ranks
+        else:
+            _rho = float("nan")
         style_fig(fig, height=480).update_layout(
-            title=f"Rating vs Price (Spearman ρ = {sub['effective_price'].corr(sub['rating'], method='spearman'):.3f})",
+            title=f"Rating vs Price (Spearman ρ = {_rho:.3f})",
             xaxis_range=[0, price_range[1]])
         st.plotly_chart(fig, use_container_width=True)
 
