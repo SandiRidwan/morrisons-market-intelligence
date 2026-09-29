@@ -257,7 +257,7 @@ with tab_ov:
                        height=520)
     except Exception as _e:  # noqa: BLE001
         st.caption(f"treemap tak tersedia ({_e}).")
-    INS.box("portfolio", st=st)
+    INS.box("echarts_treemap", st=st)
 
 # ============================== PRICING ==============================
 with tab_price:
@@ -325,7 +325,7 @@ with tab_price:
                 yname="harga (£)", height=500)
     except Exception as _e:  # noqa: BLE001
         st.caption(f"boxplot tak tersedia ({_e}).")
-    INS.box("rating_vs_price", st=st)
+    INS.box("echarts_boxplot", st=st)
 
 # ============================== PROMOTIONS ==============================
 with tab_promo:
@@ -448,7 +448,7 @@ with tab_brand:
             yname="jumlah SKU", height=440)
     except Exception as _e:  # noqa: BLE001
         st.caption(f"pictorialBar tak tersedia ({_e}).")
-    INS.box("brand_positioning", st=st)
+    INS.box("echarts_pictorial", st=st)
 
 # ============================== VALUE ==============================
 with tab_value:

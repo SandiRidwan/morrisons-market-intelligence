@@ -165,3 +165,75 @@ register(
         "hancur cepat."),
     tingkat="sedang",
 )
+
+
+# --------------------------------------------------------------------------
+# Chart ECharts (v2) — insight & rekomendasi.
+# --------------------------------------------------------------------------
+
+register(
+    "echarts_treemap",
+    kesimpulan=(
+        "Treemap memetakan dua tingkat sekaligus: luas kategori = jumlah SKU, "
+        "kotak di dalamnya = brand teratas. Kategori gemuk dengan brand dominan "
+        "tunggal menandakan konsentrasi pasokan (risiko bila brand itu bermasalah); "
+        "kategori tersebar merata lebih tangguh terhadap gangguan satu pemasok."),
+    rekomendasi=[
+        "Tandai kategori dengan satu brand menyerap porsi besar SKU — "
+        "pertimbangkan menambah alternatif untuk mengurangi risiko pasokan.",
+        "Untuk kategori gemuk, negosiasikan lebih agresif (volume besar = "
+        "daya tawar).",
+        "Gunakan treemap untuk mengomunikasikan struktur katalog ke manajemen "
+        "secara instan.",
+    ],
+    risiko=(
+        "Konsentrasi brand yang tak terlihat menyembunyikan risiko: gangguan "
+        "satu pemasok bisa mengosongkan seluruh rak kategori. Sebaliknya, rasio "
+        "SKU bukan ukuran penjualan — jangan samakan jumlah SKU dengan omzet."),
+    tingkat="sedang",
+)
+
+register(
+    "echarts_boxplot",
+    kesimpulan=(
+        "Boxplot harga per kategori menampilkan MEDIAN, SEBARAN, dan PENCILAN "
+        "harga. Kategori dengan kotak panjang & banyak pencilan atas = rentang "
+        "harga sangat lebar (produk murah sampai premium dalam satu kategori), "
+        "menandakan peluang segmentasi. Kategori dengan kotak sempit = pasar "
+        "harga yang ketat/komoditas."),
+    rekomendasi=[
+        "Kategori berjarak lebar → kembangkan tier premium & value secara "
+        "terpisah; jangan pakai satu harga tengah.",
+        "Selidiki pencilan harga atas: apakah produk premium wajar atau salah "
+        "data (mis. salah despkripsi satuan).",
+        "Untuk kategori sempit, bersaing lewat ketersediaan & kesegaran, bukan "
+        "harga.",
+    ],
+    risiko=(
+        "Menetapkan satu harga mewakili kategori berjarak lebar berisiko "
+        "kehilangan segmen premium (margin tinggi) atau mencemari citra value. "
+        "Distribusi, bukan rata-rata, yang menentukan strategi tier."),
+    tingkat="tinggi",
+)
+
+register(
+    "echarts_pictorial",
+    kesimpulan=(
+        "Bar bertitik menampilkan jumlah SKU brand teratas sebagai blok visual — "
+        "lebih cepat dicerna untuk laporan. Brand teratas mencerminkan kekuatan "
+        "lini produk, tetapi sekali lagi: banyak SKU ≠ banyak penjualan. Ia "
+        "menjawab 'siapa mendominasi RAK', bukan 'siapa mendominasi KERANJANG'."),
+    rekomendasi=[
+        "Pasangkan jumlah SKU dengan data penjualan bila tersedia sebelum "
+        "menyimpulkan brand 'pemenang'.",
+        "Untuk brand dengan SKU banyak tapi rating rendah, tinjau ulang mutu/"
+        "relevansi produk (risiko rak penuh barang tak laku).",
+        "Gunakan grafik ini sebagai pembuka diskusi brand-review, bukan bukti "
+        "kinerja.",
+    ],
+    risiko=(
+        "Menilai kekuatan brand dari jumlah SKU saja menyesatkan — SKU berlebih "
+        "justru bisa menandakan rak penuh produk berkinerja rendah. Keputusan "
+        "asortimen tanpa data penjualan berisiko memperbesar masalah."),
+    tingkat="sedang",
+)
