@@ -28,6 +28,7 @@ sys.path.insert(0, str(ROOT / "src"))
 import explanations as X  # noqa: E402
 import insights_content  # noqa: E402,F401
 import insight as INS  # noqa: E402
+import echarts_charts as EC  # noqa: E402  (treemap, boxplot, pictorialBar)
 
 CLEAN_CSV = ROOT / "data" / "processed" / "morrisons_clean.csv"
 
@@ -234,6 +235,30 @@ with tab_ov:
         st.plotly_chart(fig, use_container_width=True)
     INS.box("portfolio", st=st)
 
+    st.markdown("#### Hierarki kategori → brand (treemap ECharts)")
+    st.caption("Treemap memetakan **dua tingkat sekaligus**: luas kotak luar = "
+               "jumlah SKU per kategori, kotak di dalamnya = brand teratas di "
+               "kategori itu. Cara cepat melihat kategori mana yang gemuk dan "
+               "brand mana yang mendominasinya.")
+    try:
+        _roots = []
+        for _cat, _g in df.groupby("cat1"):
+            if len(_g) < 20:
+                continue
+            _tb = _g["brand"].value_counts().head(6)
+            _roots.append({
+                "name": str(_cat)[:20],
+                "value": int(len(_g)),
+                "children": [{"name": str(b)[:18], "value": int(n)}
+                             for b, n in _tb.items()]})
+        if _roots:
+            _roots = sorted(_roots, key=lambda r: -r["value"])[:12]
+            EC.treemap(_roots, title="SKU per kategori → brand teratas",
+                       height=520)
+    except Exception as _e:  # noqa: BLE001
+        st.caption(f"treemap tak tersedia ({_e}).")
+    INS.box("portfolio", st=st)
+
 # ============================== PRICING ==============================
 with tab_price:
     X.render("rating_vs_price", st=st)
@@ -282,6 +307,25 @@ with tab_price:
                        labels={"effective_price": "Effective price (£)"})
     style_fig(fig, height=360).update_layout(title="Price Distribution (all filtered products)")
     st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown("#### Sebaran harga per kategori (boxplot ECharts)")
+    st.caption("Boxplot jauh lebih informatif dari bar rata-rata: garis tengah = "
+               "**median**, kotak = **50% produk tengah**, titik = **produk "
+               "pencilan** (sangat mahal/murah). Kategori dengan kotak panjang "
+               "punya rentang harga sangat lebar.")
+    try:
+        _bc = df[df["effective_price"] <= price_range[1]]
+        _bycat = (_bc.groupby("cat1")["effective_price"].apply(list)
+                  .sort_values(key=lambda s: s.map(len), ascending=False).head(15))
+        if len(_bycat):
+            EC.boxplot(
+                categories=[str(k)[:18] for k in _bycat.index],
+                values=[list(v) for v in _bycat.values],
+                title="Sebaran harga efektif per kategori (£)",
+                yname="harga (£)", height=500)
+    except Exception as _e:  # noqa: BLE001
+        st.caption(f"boxplot tak tersedia ({_e}).")
+    INS.box("rating_vs_price", st=st)
 
 # ============================== PROMOTIONS ==============================
 with tab_promo:
@@ -390,6 +434,21 @@ with tab_brand:
         yaxis_title="% of SKUs", xaxis_title="")
     fig.update_xaxes(tickangle=-35, tickfont=dict(size=9))
     st.plotly_chart(fig, use_container_width=True)
+
+    st.markdown("#### Top brand — bar bertitik (pictorialBar ECharts)")
+    st.caption("PictorialBar menampilkan jumlah SKU sebagai **blok bertitik** — "
+               "lebih menarik secara visual untuk laporan klien, dengan pesan "
+               "yang sama jelasnya: brand mana yang punya lini produk terlebar.")
+    try:
+        _tb = df["brand"].value_counts().head(14)
+        EC.pictorial_bar(
+            categories=[str(b)[:16] for b in _tb.index],
+            values=[int(v) for v in _tb.values],
+            symbol="rect", title="Top brand menurut jumlah SKU",
+            yname="jumlah SKU", height=440)
+    except Exception as _e:  # noqa: BLE001
+        st.caption(f"pictorialBar tak tersedia ({_e}).")
+    INS.box("brand_positioning", st=st)
 
 # ============================== VALUE ==============================
 with tab_value:
