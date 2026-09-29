@@ -1,4 +1,4 @@
-﻿"""
+"""
 Morrisons UK — Grocery Market Intelligence Dashboard
 =====================================================
 Dashboard interaktif Streamlit + Plotly atas 11.208 produk hasil scraping (data terbaru).
@@ -26,6 +26,8 @@ import streamlit as st
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 import explanations as X  # noqa: E402
+import insights_content  # noqa: E402,F401
+import insight as INS  # noqa: E402
 
 CLEAN_CSV = ROOT / "data" / "processed" / "morrisons_clean.csv"
 
@@ -177,6 +179,7 @@ tab_ov, tab_price, tab_promo, tab_brand, tab_value = st.tabs(
 # ============================== OVERVIEW ==============================
 with tab_ov:
     X.render("kpi", st=st)
+    INS.box("kpi", st=st)
     X.render("price_by_category", st=st)
     X.render("portfolio", st=st)
     c1, c2 = st.columns([1.1, 1])
@@ -192,6 +195,7 @@ with tab_ov:
         fig.update_layout(title="Median Price by Category")
         fig.update_xaxes(range=[0, t["effective_price"].max() * 1.2])
         st.plotly_chart(fig, use_container_width=True)
+        INS.box("price_by_category", st=st)
     with c2:
         t = df["cat1"].value_counts().reset_index()
         t.columns = ["cat1", "count"]
@@ -228,6 +232,7 @@ with tab_ov:
                                      title="Median Rating by Category",
                                      xaxis_range=[0, 5.4])
         st.plotly_chart(fig, use_container_width=True)
+    INS.box("portfolio", st=st)
 
 # ============================== PRICING ==============================
 with tab_price:
@@ -265,6 +270,7 @@ with tab_price:
             title=f"Rating vs Price (Spearman ρ = {_rho:.3f})",
             xaxis_range=[0, price_range[1]])
         st.plotly_chart(fig, use_container_width=True)
+    INS.box("rating_vs_price", st=st)
 
     # histogram harga
     fig = px.histogram(df[df["effective_price"] <= price_range[1]],
@@ -333,6 +339,7 @@ with tab_promo:
     style_fig(fig, height=400).update_layout(
         title="Promo Price vs Discount Depth", xaxis_range=[0, price_range[1]])
     st.plotly_chart(fig, use_container_width=True)
+    INS.box("promo_by_category", st=st)
 
 # ============================== BRANDS ==============================
 with tab_brand:
@@ -348,6 +355,7 @@ with tab_brand:
         style_fig(fig, height=560).update_layout(
             coloraxis_showscale=False, title="Top 20 Brands by SKU Count")
         st.plotly_chart(fig, use_container_width=True)
+        INS.box("own_brand", st=st)
     with c2:
         bp = (df.groupby("brand")
               .agg(products=("product_id", "size"),
@@ -366,6 +374,7 @@ with tab_brand:
             coloraxis_showscale=False,
             title="Brand Positioning (color: red=premium, green=value)")
         st.plotly_chart(fig, use_container_width=True)
+        INS.box("brand_positioning", st=st)
 
     # bar: premium vs value share
     t = (df.groupby("cat1")["brand_tier"]
@@ -409,6 +418,7 @@ with tab_value:
         st.dataframe(show, use_container_width=True, hide_index=True)
     else:
         st.info("Tidak ada produk yang cocok dengan filter. Turunkan 'Min reviews'.")
+    INS.box("value_winners", st=st)
 
 # ---------------------------------------------------------------- footer
 st.markdown(
